@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'welcome/about', to: 'welcome#about'
   root 'welcome#alphablog_home'
   get 'welcome/alphablog_about', to:'welcome#alphablog_about'
+  
+  resources :articles
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
